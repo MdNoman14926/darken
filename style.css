@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --parimary-color: #060616;
+    --secondary-color: #fff;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: var(--parimary-color);
+    font-family: sans-serif;
+}
+nav{
+    width: 84%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+nav img{
+    width: 100px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 25px;  ;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:  var(--secondary-color);
+}
+nav ul li a:hover{
+    color: #ff4321;
+}
+.left-side{
+    margin-top: 15%;
+    margin-left: 8%;
+}
+.left-side h1{
+    font-size: 50px;
+    color: var(--secondary-color);
+    
+}.left-side p{
+  margin-top: 20px;
+}
+span{
+    color: #ff4321;
+}
+.left-side a{
+    padding: 10px 18px;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    color: var(--parimary-color);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 3px;
+}
+.left-side a:hover{
+    color: #ff4321;
+}
+.image{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0;
+    right: 100px;
+}
+.image img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translatex(-50%);
+    transition: bottom 1s,left 1s;
+}
+.image:hover .patern{
+    bottom: 30px;
+}
+.image:hover .girl{
+    left: 54%;
+}
